@@ -12,7 +12,7 @@ You put the phone down, crack your fingers.....
 # Tech-savvy things
 This repo contains a simple NodeJS Express application that responds to a GET request with the contents of data.json. 
 
-You may use registry.gitlab.com/martitech-public/backend-assessment:latest Docker Image for the Api or clone this repository and run barebones. You can also build the Dockerfile in the repository or just use data.json file as an input.
+You may use http://registry.gitlab.com/martitech-public/backend-assessment:latest Docker Image for the Api or clone this repository and run barebones. You can also build the Dockerfile in the repository or just use data.json file as an input.
 
 If you are using the Docker image API listens on port 4000 and only responds to a GET request (i.e. http://localhost:4000)
 
