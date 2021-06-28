@@ -20,11 +20,38 @@ If you are using the Docker image API listens on port 4000 and only responds to 
 Your output should be a json array, ordered vehicles by distance between them. 
 We should reach your solution via a public git repo.
 
-# Bonuses
-- Self documenting code is a plus.
-- Unit tests will be nice.
-- SOLID principles are heart-warming.
-- TypeScript will be a bonus but nice to have.
-- Dockerized solutions have a big welcome.
-- Optional Route Optimization is a big bonus but not required.
+# Solution
+Used geographic distance calculation formula for calculate distance behind the points. Then sort list as distances.
 
+There are two alternative methods.
+
+* First one is calculating as the first item of the list. http://localhost:4000/`nearest`
+
+* Second one gets a geographic point and compare with items in the list. http://localhost:4000/`getNearestByPosition`/`{latitude}`/`{longitude}`
+
+
+
+# How to run project?
+There are some runing alternatives.
+## Docker
+If environment will be run on a `Docker Container.` Start docker-compose with shell script.
+```
+./run.sh
+```
+
+If not using linux run manuel docker-compose.
+```
+docker-compose -f docker-compose.yml -d
+```
+## Node.js
+Start with `Node.js` on the host system.
+```
+node index.js
+```
+## Forever
+Install and run with `Forever.`
+```
+npm install forever
+
+forever start index.js
+```

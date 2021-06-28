@@ -27,7 +27,7 @@ app.get("/nearest", (req, res) => {
     }
 });
 
-app.get("/getNearestLocations/:lat/:lon", (req, res) => {
+app.get("/getNearestByPosition/:lat/:lon", (req, res) => {
     const raw = fs.readFileSync("./data.json");
     const data = JSON.parse(raw);
     

@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "8a81e6ce-1e2e-4d8f-aaa9-3a2fc3b5ce8c",
+		"name": "Marti-Request-Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000"
+				},
+				"description": "Default list - not sorted"
+			},
+			"response": [
+				{
+					"name": "http://localhost:4000",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "800"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"320-G6Q1D1R7MFs48nCeI+7zU6XJ+b8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Jun 2021 21:23:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"poiName\": \"Poi 1\",\n        \"latitude\": 40.978696156559884,\n        \"longitude\": 29.13730406235724\n    },\n    {\n        \"poiName\": \"Poi 2\",\n        \"latitude\": 40.97263724900384,\n        \"longitude\": 29.141359562598126\n    },\n    {\n        \"poiName\": \"Poi 3\",\n        \"latitude\": 40.97529416466278,\n        \"longitude\": 29.12781977119488\n    },\n    {\n        \"poiName\": \"Poi 4\",\n        \"latitude\": 40.971648978664156,\n        \"longitude\": 29.13672470558623\n    },\n    {\n        \"poiName\": \"Poi 5\",\n        \"latitude\": 40.97900394715689,\n        \"longitude\": 29.126296276395397\n    },\n    {\n        \"poiName\": \"Poi 6\",\n        \"latitude\": 40.97900394715689,\n        \"longitude\": 29.126296276395397\n    },\n    {\n        \"poiName\": \"Poi 7\",\n        \"latitude\": 40.98341005534748,\n        \"longitude\": 29.125395054550385\n    },\n    {\n        \"poiName\": \"Poi 8\",\n        \"latitude\": 40.97529416466278,\n        \"longitude\": 29.12781977119488\n    },\n    {\n        \"poiName\": \"Poi 9\",\n        \"latitude\": 40.988334180897816,\n        \"longitude\": 29.12507318950866\n    },\n    {\n        \"poiName\": \"Poi 10\",\n        \"latitude\": 40.98318327765146,\n        \"longitude\": 29.119558567487996\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4000/nearest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/nearest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"nearest"
+					]
+				},
+				"description": "Get ordered list as first element of the list"
+			},
+			"response": [
+				{
+					"name": "http://localhost:4000/nearest",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/nearest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"nearest"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "800"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"320-KbXSApOfSkaAHSRRvP+ZB8wLBqs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Jun 2021 21:24:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"poiName\": \"Poi 1\",\n        \"latitude\": 40.978696156559884,\n        \"longitude\": 29.13730406235724\n    },\n    {\n        \"poiName\": \"Poi 2\",\n        \"latitude\": 40.97263724900384,\n        \"longitude\": 29.141359562598126\n    },\n    {\n        \"poiName\": \"Poi 4\",\n        \"latitude\": 40.971648978664156,\n        \"longitude\": 29.13672470558623\n    },\n    {\n        \"poiName\": \"Poi 3\",\n        \"latitude\": 40.97529416466278,\n        \"longitude\": 29.12781977119488\n    },\n    {\n        \"poiName\": \"Poi 8\",\n        \"latitude\": 40.97529416466278,\n        \"longitude\": 29.12781977119488\n    },\n    {\n        \"poiName\": \"Poi 5\",\n        \"latitude\": 40.97900394715689,\n        \"longitude\": 29.126296276395397\n    },\n    {\n        \"poiName\": \"Poi 6\",\n        \"latitude\": 40.97900394715689,\n        \"longitude\": 29.126296276395397\n    },\n    {\n        \"poiName\": \"Poi 7\",\n        \"latitude\": 40.98341005534748,\n        \"longitude\": 29.125395054550385\n    },\n    {\n        \"poiName\": \"Poi 9\",\n        \"latitude\": 40.988334180897816,\n        \"longitude\": 29.12507318950866\n    },\n    {\n        \"poiName\": \"Poi 10\",\n        \"latitude\": 40.98318327765146,\n        \"longitude\": 29.119558567487996\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4000/getNearestByPosition/46.2525/25.125",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/getNearestByPosition/46.2525/25.125",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"getNearestByPosition",
+						"46.2525",
+						"25.125"
+					]
+				},
+				"description": "Get nearest by position"
+			},
+			"response": [
+				{
+					"name": "http://localhost:4000/getNearestByPosition/46.2525/25.125",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/getNearestByPosition/40.9716489/29.136724705",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"getNearestByPosition",
+								"40.9716489",
+								"29.136724705"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "800"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"320-oS/0tec01tynL8lr1qKDfu8tgEw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Jun 2021 21:29:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"poiName\": \"Poi 4\",\n        \"latitude\": 40.971648978664156,\n        \"longitude\": 29.13672470558623\n    },\n    {\n        \"poiName\": \"Poi 2\",\n        \"latitude\": 40.97263724900384,\n        \"longitude\": 29.141359562598126\n    },\n    {\n        \"poiName\": \"Poi 1\",\n        \"latitude\": 40.978696156559884,\n        \"longitude\": 29.13730406235724\n    },\n    {\n        \"poiName\": \"Poi 3\",\n        \"latitude\": 40.97529416466278,\n        \"longitude\": 29.12781977119488\n    },\n    {\n        \"poiName\": \"Poi 8\",\n        \"latitude\": 40.97529416466278,\n        \"longitude\": 29.12781977119488\n    },\n    {\n        \"poiName\": \"Poi 5\",\n        \"latitude\": 40.97900394715689,\n        \"longitude\": 29.126296276395397\n    },\n    {\n        \"poiName\": \"Poi 6\",\n        \"latitude\": 40.97900394715689,\n        \"longitude\": 29.126296276395397\n    },\n    {\n        \"poiName\": \"Poi 7\",\n        \"latitude\": 40.98341005534748,\n        \"longitude\": 29.125395054550385\n    },\n    {\n        \"poiName\": \"Poi 10\",\n        \"latitude\": 40.98318327765146,\n        \"longitude\": 29.119558567487996\n    },\n    {\n        \"poiName\": \"Poi 9\",\n        \"latitude\": 40.988334180897816,\n        \"longitude\": 29.12507318950866\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4000/getNearestByPosition/40.979003/29.126296276",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/getNearestByPosition/40.979003/29.126296276",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"getNearestByPosition",
+						"40.979003",
+						"29.126296276"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:4000/getNearestByPosition/40.979003/29.126296276",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/getNearestByPosition/40.979003/29.126296276",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"getNearestByPosition",
+								"40.979003",
+								"29.126296276"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "800"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"320-Zm0txTU5ih3TVe8P0D0y+EsWvrU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Jun 2021 21:31:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"poiName\": \"Poi 5\",\n        \"latitude\": 40.97900394715689,\n        \"longitude\": 29.126296276395397\n    },\n    {\n        \"poiName\": \"Poi 6\",\n        \"latitude\": 40.97900394715689,\n        \"longitude\": 29.126296276395397\n    },\n    {\n        \"poiName\": \"Poi 3\",\n        \"latitude\": 40.97529416466278,\n        \"longitude\": 29.12781977119488\n    },\n    {\n        \"poiName\": \"Poi 8\",\n        \"latitude\": 40.97529416466278,\n        \"longitude\": 29.12781977119488\n    },\n    {\n        \"poiName\": \"Poi 7\",\n        \"latitude\": 40.98341005534748,\n        \"longitude\": 29.125395054550385\n    },\n    {\n        \"poiName\": \"Poi 10\",\n        \"latitude\": 40.98318327765146,\n        \"longitude\": 29.119558567487996\n    },\n    {\n        \"poiName\": \"Poi 1\",\n        \"latitude\": 40.978696156559884,\n        \"longitude\": 29.13730406235724\n    },\n    {\n        \"poiName\": \"Poi 9\",\n        \"latitude\": 40.988334180897816,\n        \"longitude\": 29.12507318950866\n    },\n    {\n        \"poiName\": \"Poi 4\",\n        \"latitude\": 40.971648978664156,\n        \"longitude\": 29.13672470558623\n    },\n    {\n        \"poiName\": \"Poi 2\",\n        \"latitude\": 40.97263724900384,\n        \"longitude\": 29.141359562598126\n    }\n]"
+				}
+			]
+		}
+	]
+}
