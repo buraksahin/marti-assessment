@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+    marti-backend:
+        build: .
+        ports:
+            - "4000:4000"
+        hostname: marti-backend
+        restart: always
