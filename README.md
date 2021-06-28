@@ -25,9 +25,9 @@ Used geographic distance calculation formula for calculate distance behind the p
 
 There are two alternative methods.
 
-* First one is calculating as the first item of the list. http://localhost:4000/`nearest`
+* First one is calculating as the first item of the list. http://localhost:4000/nearest
 
-* Second one gets a geographic point and compare with items in the list. http://localhost:4000/`getNearestByPosition`/`{latitude}`/`{longitude}`
+* Second one gets a geographic point and compare with items in the list. http://localhost:4000/getNearestByPosition/{latitude}/{longitude}
 
 
 
