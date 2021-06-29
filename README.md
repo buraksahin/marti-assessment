@@ -21,13 +21,9 @@ Your output should be a json array, ordered vehicles by distance between them.
 We should reach your solution via a public git repo.
 
 # Solution
-Used geographic distance calculation formula for calculate distance behind the points. Then sort list as distances.
+Used geographic distance calculation formula for calculate distance behind the points. Find next nearest point then order list.
 
-There are two alternative methods.
-
-* First one is calculating as the first item of the list. http://localhost:4000/nearest
-
-* Second one gets a geographic point and compare with items in the list. http://localhost:4000/getNearestByPosition/{latitude}/{longitude}
+* http://localhost:4000/getOrderedList
 
 
 

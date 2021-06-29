@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
     res.send(data);
 });
 
-app.get("/nearest", (req, res) => {
+app.get("/getOrderedList", (req, res) => {
     const raw = fs.readFileSync("./data.json");
     const data = JSON.parse(raw);
     
@@ -21,24 +21,6 @@ app.get("/nearest", (req, res) => {
 
     if(resultData){
         res.send(JSON.parse(resultData));
-    }
-    else{
-        res.send(data);
-    }
-});
-
-app.get("/getNearestByPosition/:lat/:lon", (req, res) => {
-    const raw = fs.readFileSync("./data.json");
-    const data = JSON.parse(raw);
-    
-    var geoUtils = new geo.GeoUtils();
-    var lat = req.params.lat;
-    var lon = req.params.lon;
-    if(lat && lon){
-        var resultData = geoUtils.getNearestListByPosition(lat,lon,data);
-        if(resultData){
-            res.send(JSON.parse(resultData));
-        }
     }
     else{
         res.send(data);
