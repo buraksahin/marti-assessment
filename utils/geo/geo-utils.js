@@ -9,7 +9,6 @@ var totalStep = 0;
 /**
  * Sorts a list of data by nearest geographic position to the passed parameter position
  * 
- * @param	{Object} position Geographic position with latitude and longitude
  * @param	{JSON}	 data   A list of elements which is inclues geographic positions as latitude and longitude
  * 
  * @return	{JSON} Sorted list
