@@ -14,10 +14,9 @@ var totalStep = 0;
  * 
  * @return	{JSON} Sorted list
  */
-GeoUtils.prototype.getNearest = function (position, data) {
+GeoUtils.prototype.getNearest = function (data) {
     var calculate = new geoCalculator.Calculator();
 
-    //calculate.distanceBetween(position, destination);
     result = [];
 
     // Start to find nearest items
@@ -79,23 +78,7 @@ GeoUtils.prototype.getNearestRecursive = function (data, result) {
  * @return	{JSON} Sorted list
  */
 GeoUtils.prototype.getNearestListByFirst = function (data) {
-    var pivotPosition = new geoCalculator.Point(data[0]["latitude"], data[0]["longitude"]);
-    return this.getNearest(pivotPosition, data);
-};
-
-/**
- * Sorts a list of data by nearest geographic position to parameterized with latitude and longitude parameters
- * 
- * @param	{Number}	latitude  Geographic positon as latitude
- * @param	{Number}	longitude Geographic positon as longitude
- * @param	{JSON}	    data      A list of elements which is inclues geographic positions as latitude and longitude
- * 
- * @return	{JSON} Sorted list
- */
-GeoUtils.prototype.getNearestListByPosition = function (latitude, longitude, data) {
-    var pivotPosition = new geoCalculator.Point(latitude, longitude);
-    logger.log(JSON.stringify(pivotPosition));
-    return this.getNearest(pivotPosition, data);
+    return this.getNearest(data);
 };
 
 module.exports = {
