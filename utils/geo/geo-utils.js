@@ -28,6 +28,15 @@ GeoUtils.prototype.getNearest = function (data) {
     return JSON.stringify(result);
 };
 
+
+/**
+ * Compare first element of the result with data elements and find nearest element in the data list
+ * then add to result list, So continue recursively until finish checking all elements in the data list
+ * 
+ * @param	{JSON}	 data   A list of elements which is inclues geographic positions as latitude and longitude
+ * @param	{JSON}	 result A list of elements which includes result elements
+ * 
+ */
 GeoUtils.prototype.getNearestRecursive = function (data, result) {
     var calculate = new geoCalculator.Calculator();
 
